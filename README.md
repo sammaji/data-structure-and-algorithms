@@ -21,7 +21,10 @@ Use the following library functions from <a href="https://algs4.cs.princeton.edu
 <li><code><b>StdIn.isEmpty():</b></code> returns true if there are no more strings available on standard input, and false otherwise.</li>
 <li><code><b>StdOut.println():</b></code> prints a string and terminating newline to standard output. It’s also fine to use <code>System.out.println()</code> instead.</li>
 <li><code><b>StdRandom.bernoulli(p):</b></code> returns true with probability <i>p</i> and false with probability <i>1−p</i>.</li><br>
-Also, add an import statement like the following at the top of your program:<br><code>import edu.princeton.cs.algs4.StdIn;<br>import edu.princeton.cs.algs4.StdOut;<br>import edu.princeton.cs.algs4.StdRandom;</code>
+Also, add an import statement like the following at the top of your program:<br>
+<code>import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;</code>
 </details>
 
 <details><summary><b>Downloading and Installation</b></summary>
