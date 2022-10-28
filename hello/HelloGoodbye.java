@@ -12,7 +12,7 @@ import edu.princeton.cs.algs4.StdIn;
 
 public class HelloGoodbye {
     public static void main(String[] args) {
-        System.out.println("Enter two names");
+        System.out.println("Enter two names (separated by blank space)");
         String name1 = StdIn.readString();
         String name2 = StdIn.readString();
         System.out.println("Hello "+name1+" and "+name2+".");
