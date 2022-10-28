@@ -3,7 +3,7 @@
 
 Hi I am Samyabrata Maji.
 
-This is a collection of notes, examples, practice questions and assignments on Data Structures and Algorithms. I am currently refering to a *[course on DSA](https://coursera.org/share/d8124fd791622db91dba4e4bd9c612fd)*. Below are some details reguarding the content available on this repository.
+This is a collection of notes, examples, practice questions and assignments on Data Structures and Algorithms. I am currently refering to a *[course on DSA](https://coursera.org/share/d8124fd791622db91dba4e4bd9c612fd)* by Princeton University. Below are some details reguarding the content available on this repository.
 
 - **Notes:**  All notes are made with reference to the aforementioned course.
 - **Practice Questions:** From *[LeetCode](https://leetcode.com), [GeeksforGeeks](https://geeksforgeeks.org)* and so on. Marked as `@problem`
@@ -21,7 +21,7 @@ Use the following library functions from <a href="https://algs4.cs.princeton.edu
 <li><code><b>StdIn.isEmpty():</b></code> returns true if there are no more strings available on standard input, and false otherwise.</li>
 <li><code><b>StdOut.println():</b></code> prints a string and terminating newline to standard output. It’s also fine to use <code>System.out.println()</code> instead.</li>
 <li><code><b>StdRandom.bernoulli(p):</b></code> returns true with probability <i>p</i> and false with probability <i>1−p</i>.</li><br>
-Also, add an import statement like the following at the top of your program:<br>
+Also, add import statements like the following at the top of your program:<br>
 <code>import edu.princeton.cs.algs4.StdIn;</code><br>
 <code>import edu.princeton.cs.algs4.StdOut;</code><br>
 <code>import edu.princeton.cs.algs4.StdRandom;</code><br>
