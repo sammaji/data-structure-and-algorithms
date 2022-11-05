@@ -31,10 +31,10 @@ public class BinarySearch {
                 return midpointer;
             }
             if (sample[midpointer]>target) {
-                rightpointer = midpointer;
+                rightpointer = midpointer-1;
             }
             if (sample[midpointer]<target) {
-                leftpointer = midpointer;
+                leftpointer = midpointer+1;
             }
         }
         return -1;
