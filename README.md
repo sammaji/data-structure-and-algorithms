@@ -8,9 +8,9 @@
 
 Hi I am Samyabrata Maji.
 
-This is a collection of notes, examples, practice questions and assignments on Data Structures and Algorithms. I am currently refering to a *[course on DSA](https://coursera.org/share/d8124fd791622db91dba4e4bd9c612fd)* by Princeton University. Below are some details reguarding the content available on this repository.
+This is a collection of notes, examples, practice questions and assignments on Data Structures and Algorithms. I am currently referring to a *[course on DSA](https://coursera.org/share/d8124fd791622db91dba4e4bd9c612fd)* by Princeton University and a *[playlist](https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ)* by Kunal Kushwaha. Below are some details reguarding the content available on this repository.
 
-- **Notes:**  All notes are made with reference to the aforementioned course.
+- **Notes:**  All notes are made with reference to the aforementioned course and channels.
 - **Practice Questions:** From *[LeetCode](https://leetcode.com), [GeeksforGeeks](https://geeksforgeeks.org)* and so on. Marked as `@problem`
 - **Assignments:**  Provide in the course. Marked as `@assignment`
 
@@ -38,5 +38,5 @@ you must download <a href="https://algs4.cs.princeton.edu/code/algs4.jar">algs4.
 add <i>algs4.jar</i> to the <i>Java classpath</i>.
 <li>If you used our autoinstaller, the Bash commands <code>javac-algs4</code> and <code>java-algs4</code> add algs4.jar to the Java classpath.</li>
 <li>If you use IntelliJ, the supplied IntelliJ project folder includes algs4.jar and adds it to the Java classpath.</li>
-<li>If you prefer to use some other shell (such as Powershell or zsh) or IDE (such as Eclipse or Netbeans), be sure that you can configure it accordingly.</li></p>
+<li>If you prefer to use some other shell (such as Powershell or zsh) or IDE (such as Eclipse or Netbeans), be sure that you can configure it accordingly.</li>
 </details>
