@@ -10,7 +10,7 @@ import edu.princeton.cs.algs4.Stopwatch;
 
 public class Fibonacci {
     public static void main(String[] args) {
-        int index = 6;
+        int index = 1000;
         double time;
         Stopwatch stopwatch = new Stopwatch();
 
@@ -45,7 +45,8 @@ public class Fibonacci {
      *
      */
     static int fib_recursion(int n) {
-        return n;
+        if (n == 1 || n == 2) return 1;
+        return fib_recursion(n-1) + fib_recursion(n-2);
     }
 
     static  int fib_bottom_up(int n) {
