@@ -8,7 +8,7 @@ import org.jetbrains.annotations.NotNull;
  */
 public class easy_problems {
     public static void main(String[] args) {
-
+        System.out.println(isArmstrongNumber(153));
     }
 
     static int factorial(int n) {
@@ -24,6 +24,10 @@ public class easy_problems {
             );
         }
         return reversedString;
+    }
+
+    static boolean isArmstrongNumber(int num) {
+        return false;
     }
 
 }
