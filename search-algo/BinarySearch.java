@@ -17,24 +17,24 @@ public class BinarySearch {
 
 
     public static int binary_search(int[] sample, int target) {
-        int leftpointer = 0;
-        int rightpointer = sample.length-1;
-        int midpointer;
+        int leftPointer = 0;
+        int rightPointer = sample.length-1;
+        int midPointer;
 
-        while(leftpointer<rightpointer) {
-            midpointer = (leftpointer+rightpointer)/2;
-            System.out.println("midpointer "+midpointer);
-            System.out.println("sample "+sample[midpointer]);
+        while(leftPointer<rightPointer) {
+            midPointer = (leftPointer+rightPointer)/2;
+            System.out.println("midPointer "+midPointer);
+            System.out.println("sample "+sample[midPointer]);
 
-            if (sample[midpointer] == target) {
+            if (sample[midPointer] == target) {
                 
-                return midpointer;
+                return midPointer;
             }
-            if (sample[midpointer]>target) {
-                rightpointer = midpointer-1;
+            if (sample[midPointer]>target) {
+                rightPointer = midPointer-1;
             }
-            if (sample[midpointer]<target) {
-                leftpointer = midpointer+1;
+            if (sample[midPointer]<target) {
+                leftPointer = midPointer+1;
             }
         }
         return -1;
