@@ -17,14 +17,6 @@ public class Fibonacci {
         System.out.println(fib(index));
         time = stopwatch.elapsedTime();
         System.out.println(time);
-
-        System.out.println(fib_recursion(index));
-        time = stopwatch.elapsedTime() - time;
-        System.out.println(time);
-
-        System.out.println(fib_bottom_up(index));
-        time = stopwatch.elapsedTime() - time;
-        System.out.println(time);
     }
 
     /**
