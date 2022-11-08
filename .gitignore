@@ -25,5 +25,11 @@ hs_err_pid*
 #Intellij
 .idea
 out
+<<<<<<< HEAD
 out/production
 *.iml
+=======
+JAVA-DSA-CODE
+JAVA-DSA-bootcamp
+JAVA-DSA-bootcamp.iml
+>>>>>>> e7a8d07b5b3d76c3f358216cd8bb3fc34b67993d
