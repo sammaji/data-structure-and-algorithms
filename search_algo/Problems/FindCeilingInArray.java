@@ -14,7 +14,7 @@ public class FindCeilingInArray {
 
     public static void main(String[] args) {
         int[] arr = {2,3,5,9,13,16,18};
-        int result = findCeiling(arr, 4);
+        int result = findCeiling(arr, 10);
         System.out.println(result);
     }
 
@@ -37,7 +37,7 @@ public class FindCeilingInArray {
             } else if (sample[midPointer] < target) {
                 leftPointer = midPointer+1;
             } else if (sample[midPointer] > target) {
-                rightPointer = leftPointer-1;
+                rightPointer = midPointer-1;
             }
         }
         return -1;
