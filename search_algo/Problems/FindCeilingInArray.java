@@ -14,7 +14,7 @@ public class FindCeilingInArray {
 
     public static void main(String[] args) {
         int[] arr = {2,3,5,9,13,16,18};
-        int result = findCeiling(arr, 10);
+        int result = findFloor(arr, 1);
         System.out.println(result);
     }
 
@@ -39,6 +39,25 @@ public class FindCeilingInArray {
             } else if (sample[midPointer] > target) {
                 rightPointer = midPointer-1;
             }
+        }
+        return -1; // when target is bigger than the max element in sample
+    }
+
+
+    // find the biggest number less than or equal to target
+    static int findFloor(int[] sample, int target) {
+        int leftPointer = 0;
+        int rightPointer = sample.length-1;
+        int midPointer;
+
+        if (sample[rightPointer] <= target) return sample[rightPointer];
+        else if (sample[leftPointer] == target) return target;
+
+        while (leftPointer<=rightPointer) {
+            midPointer = leftPointer+((rightPointer-leftPointer)/2);
+            if (sample[midPointer]<=target && sample[midPointer+1]>target) return sample[midPointer];
+            else if (sample[midPointer] < target) leftPointer = midPointer+1;
+            else if (sample[midPointer] > target) rightPointer = midPointer-1;
         }
         return -1;
     }
