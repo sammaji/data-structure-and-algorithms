@@ -7,7 +7,6 @@
  */
 
 package hello;
-
 import edu.princeton.cs.algs4.StdIn;
 
 public class HelloGoodbye {
