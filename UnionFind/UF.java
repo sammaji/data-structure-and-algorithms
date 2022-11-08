@@ -1,11 +1,10 @@
+package UnionFind;
+
 /**
  * Given a set of N objects:
  * - Union command: connects two objects
- * - Find / Connected query: is there a path connecting two objects? 
+ * - Find / Connected query: is there a path connecting two objects?
  */
-
-package UnionFind;
-
 public abstract class UF {
 
     /**
