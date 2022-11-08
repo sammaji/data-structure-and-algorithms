@@ -5,13 +5,14 @@
 public class BinarySearch {
     public static void main(String[] args) {
         // setup and init
-        int[] sample_array = new int[10];
+        int[] sample_array = new int[100];
         for (int i = 0; i < sample_array.length; i++) {
             sample_array[i] = i+10;
         }
+        int[] sample_array2 = {5,6,7,8,9,10};
         System.out.println(
             "answer "+
-            binary_search(sample_array, 13)
+            binary_search(sample_array, 57)
         );
     }
 
@@ -21,13 +22,15 @@ public class BinarySearch {
         int rightPointer = sample.length-1;
         int midPointer;
 
-        while(leftPointer<rightPointer) {
-            midPointer = (leftPointer+rightPointer)/2;
-            System.out.println("midPointer "+midPointer);
-            System.out.println("sample "+sample[midPointer]);
+        while(leftPointer<=rightPointer) {
+            /*
+              do not use midPointer = (leftPointer + rightPointer)/2 to find average
+              if both of them (leftPointer and rightPointer) are big integers, then
+              their sum (leftPointer+rightPointer) might exceed the storage limit for int
+             */
+            midPointer = leftPointer + ((rightPointer-leftPointer)/2);
 
             if (sample[midPointer] == target) {
-                
                 return midPointer;
             }
             if (sample[midPointer]>target) {
