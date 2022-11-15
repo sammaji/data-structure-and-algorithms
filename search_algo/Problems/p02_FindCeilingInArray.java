@@ -10,7 +10,7 @@ package Problems;
  * findCeiling(arr, 10) = 13;
  * findCeiling(arr, 25) = 18;
  */
-public class FindCeilingInArray {
+public class p02_FindCeilingInArray {
 
     public static void main(String[] args) {
         int[] arr = {2,3,5,9,13,16,18};

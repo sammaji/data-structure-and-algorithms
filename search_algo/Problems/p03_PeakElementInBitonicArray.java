@@ -1,6 +1,6 @@
 package Problems;
 
-public class PeakElementInBitonicArray {
+public class p03_PeakElementInBitonicArray {
     static int PeakElement(int[] sample) {
         int start = 0;
         int end = sample.length-1;
