@@ -1,5 +1,10 @@
 package Problems;
 
+/**
+ * Search for an element in a 2D row-wise
+ * and column wise sorted array, ie, every row is sorted
+ * and every column is sorted in ascending order
+ */
 public class p05_SearchIn2DSortedArray {
     public static void main(String[] args) {
         int[][] sorted_2d_array = {
