@@ -1,4 +1,4 @@
-package a2_search_algo.Problems;
+package a1_search_algo.Problems;
 
 /**
  * @Date : 11/11/22
