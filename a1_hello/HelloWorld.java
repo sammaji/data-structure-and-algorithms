@@ -2,7 +2,7 @@
  * @assignment: Write a program to print Hello World
  */
 
-package hello;
+package a1_hello;
 
 public class HelloWorld {
     public static void main(String[] args) {

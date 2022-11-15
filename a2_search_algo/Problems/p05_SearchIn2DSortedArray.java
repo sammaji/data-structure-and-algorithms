@@ -1,4 +1,4 @@
-package Problems;
+package a2_search_algo.Problems;
 
 /**
  * Search for an element in a 2D row-wise
