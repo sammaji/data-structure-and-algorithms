@@ -14,11 +14,11 @@ public class BubbleSort {
             17,15,2,17
         };
 
-        int[] result = bubbleSort(arrWithRepeatition);
+        int[] result = bubbleSort(arrWithoutRepeatition);
+        for (int element : result) System.out.print(element+",");
+        result = bubbleSort(arrWithRepeatition);
+        for (int element : result) System.out.print(element+",");
 
-        for (int element : result) {
-            System.out.print(element+",");
-        }
     }
 
     static int[] bubbleSort(int[] sample) {
@@ -27,6 +27,8 @@ public class BubbleSort {
         for (int i = 0; i < sample.length; i++) { 
             // after i-th step, the i-th largest index
             // goes to the (n-i)th position
+            // after 3rd step, the 3rd largest element
+            // goes to the 3rd last position
             for (int j = 0; j < sample.length-1; j++) {
                 if (sample[j] > sample[j+1]) {
                     // swap
