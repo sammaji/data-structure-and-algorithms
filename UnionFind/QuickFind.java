@@ -7,8 +7,6 @@ public class QuickFind extends UF {
 
     public QuickFind(int N) {
         super(N);
-
-        UF[] ufg = new UF[5];
         
         this.N = N;
         entries = new int[N];

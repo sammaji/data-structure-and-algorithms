@@ -1,11 +1,15 @@
-public class FindInPeakArray {
+package Problems;
+
+public class p04_FindElementInPeakArray {
+
+    
     public static void main(String[] args) {
 
     }
 
-    public int findInMountainArray(int target, MountainArray mountainArr) {
+    public int findInMountainArray(int target, int[] mountainArr) {
         int start = 0;
-        int end = mountainArr.length()-1;
+        int end = mountainArr.length-1;
         int mid;
 
         int peakIndex = 0;
@@ -15,11 +19,11 @@ public class FindInPeakArray {
         while (start < end) {
             mid = start + (end-start)/2;
 
-            if (mountainArr.get(mid) > mountainArr.get(mid+1)) {
+            if (mountainArr[mid] > mountainArr[mid+1]) {
                 // descending part
                 // we dont now if e[mid-1]>e[mid]
                 end = mid;
-            } else if (mountainArr.get(mid) < mountainArr.get(mid+1)) {
+            } else if (mountainArr[mid] < mountainArr[mid+1]) {
                 start = mid+1;
             } else {
                 peakIndex = mid;
@@ -28,7 +32,7 @@ public class FindInPeakArray {
         }
         peakIndex = end;
 
-        int minIndex = mountainArr.length()-1;
+        int minIndex = mountainArr.length-1;
 
         // searching in ascending part
         start = 0;
@@ -36,10 +40,10 @@ public class FindInPeakArray {
 
         while (start <= end) {
             mid = start + (end-start)/2;
-            if (mountainArr.get(mid) > target) {
+            if (mountainArr[mid] > target) {
                 // check left
                 end = mid-1;
-            } else if (mountainArr.get(mid) < target) {
+            } else if (mountainArr[mid] < target) {
                 // check right
                 start = mid+1;
             } else {
@@ -51,14 +55,14 @@ public class FindInPeakArray {
 
         // searching in descending part
         start = peakIndex+1;
-        end = mountainArr.length()-1;
+        end = mountainArr.length-1;
 
         while (start <= end) {
             mid = start + (end-start)/2;
-            if (mountainArr.get(mid) < target) {
+            if (mountainArr[mid]< target) {
                 // check left
                 end = mid-1;
-            } else if (mountainArr.get(mid) > target) {
+            } else if (mountainArr[mid] > target) {
                 // check right
                 start = mid+1;
             } else {
@@ -68,17 +72,7 @@ public class FindInPeakArray {
             }
         }
         // target might or might not be at the last index
-        if (mountainArr.get(minIndex) != target && minIndex == (mountainArr.length()-1)) return -1;
+        if (mountainArr[minIndex] != target && minIndex == (mountainArr.length-1)) return -1;
         else return minIndex;
-    }
-}
-
-public class MountainArray() {
-    public MountainArray() {
-        int length;
-    }
-
-    public int get(int index) {
-        return;
     }
 }
