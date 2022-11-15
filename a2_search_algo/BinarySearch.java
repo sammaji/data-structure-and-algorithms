@@ -1,3 +1,5 @@
+package a2_search_algo;
+
 /**
  * Using binary search algorithm to search for a target
  * in a given sorted array
