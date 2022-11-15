@@ -2,6 +2,7 @@
 
 - Bubble Sort
 - Quick Sort
+- Merge Sort
 - Insersion sort
 - Count Sort
 - Heap Sort
