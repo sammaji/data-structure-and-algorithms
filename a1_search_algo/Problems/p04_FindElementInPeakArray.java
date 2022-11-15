@@ -1,4 +1,4 @@
-package Problems;
+package a1_search_algo.Problems;
 
 public class p04_FindElementInPeakArray {
 
