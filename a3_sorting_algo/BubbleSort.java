@@ -25,6 +25,8 @@ public class BubbleSort {
         // i is the number of steps
         // j is the index of each element in array
         for (int i = 0; i < sample.length; i++) { 
+            // after i-th step, the i-th largest index
+            // goes to the (n-i)th position
             for (int j = 0; j < sample.length-1; j++) {
                 if (sample[j] > sample[j+1]) {
                     // swap
