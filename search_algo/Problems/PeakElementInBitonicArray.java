@@ -1,12 +1,6 @@
 package Problems;
 
 public class PeakElementInBitonicArray {
-    public static void main(String[] args) {
-        int[] arr = {1,3,4,6,9,10,15,5,4,3,2,1};
-        int ans = PeakElement(arr);
-        System.out.println(ans);
-    }
-
     static int PeakElement(int[] sample) {
         int start = 0;
         int end = sample.length-1;
