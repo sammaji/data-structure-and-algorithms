@@ -53,15 +53,6 @@ import java.util.List;
  * Explanation: The smallest positive integer 1 is missing.
  */
 public class p01_MissingNumbers {
-    public static void main(String[] args) {
-        // int[] nums1 = {3,4,-1,1};
-        // int[] nums2 = {7,8,9,11,12};
-        // System.out.println(nums1);
-        // System.out.println(nums2);
-
-        int[] nums = {2,2};
-        System.out.println(firstMissingPositive(nums));
-    }
 
     // question 01
     static int findMissingNumbers(int[] nums) {
