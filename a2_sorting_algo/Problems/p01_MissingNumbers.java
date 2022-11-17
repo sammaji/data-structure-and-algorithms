@@ -14,11 +14,35 @@ public class p01_MissingNumbers {
         System.out.println(findMissingNumbers(nums1));
         System.out.println(findMissingNumbers(nums2));
         System.out.println(findMissingNumbers(nums3));
-
     }
 
     static int findMissingNumbers(int[] nums) {
+        int pointer = 0;
+        int index = 0;
+        while(pointer <= nums.length-1) {
+            if (nums[pointer] == pointer) {
+                pointer++;
+            } else if (nums[pointer] != pointer && nums[pointer] < nums.length) {
+                // swap
+                int temp = nums[nums[pointer]];
+                nums[nums[pointer]] = nums[pointer];
+                nums[pointer] = temp;
+            } else if (nums[pointer] == nums.length) {
+                index = pointer;
+                pointer++;
+            }
+        }
         
-        return -1;
+        // if index is pointing at index 0, then,
+        // case1: either the missing element is zero.
+        // in that case nums[0] must be N
+        // case2: or the missing element is N
+        // in that case nums[0] must be 0
+        if (index == 0) {
+            if (nums[0] == 0) return nums.length;
+            else return 0;
+        } 
+
+        return index;
     }
 }
