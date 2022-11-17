@@ -1,32 +1,66 @@
 package a2_sorting_algo.Problems;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
- * @question: Given an array nums containing n distinct numbers 
+ * All questions are of similar types.
+ * @question 01: Given an array nums containing n distinct numbers 
  * in the range [0, n], return the only number in the 
  * range that is missing from the array.
  * 
- * @question: Given an array nums of n integers where nums[i] is in the range [1, n], 
+ * @question 02: Given an array nums of n integers where nums[i] is in the range [1, n], 
  * return an array of all the integers in the range [1, n] that do not appear in nums.
  * Example 1:
  * Input: nums = [4,3,2,7,8,2,3,1]
  * Output: [5,6]
+ * 
+ * @question 03: Given an array of integers nums containing n + 1 integers
+ * where each integer is in the range [1, n] inclusive.
+ * There is only one repeated number in nums, return this repeated number.
+ * You must solve the problem without modifying the array nums and uses 
+ * only constant extra space.
+ * Example 1:
+ * Input: nums = [1,3,4,2,2]
+ * Output: 2
+ * 
+ * @question 04: Given an integer array nums of length n where
+ * all the integers of nums are in the range [1, n] and each integer 
+ * appears once or twice, return an array of all the integers that 
+ * appears twice. You must write an algorithm that runs in O(n) 
+ * time and uses only constant extra space.
+ * Example 1:
+ * Input: nums = [4,3,2,7,8,2,3,1]
+ * Output: [2,3]
+ * 
+ * @question 05: [LEETCODE HARD] Given an unsorted integer array nums, 
+ * return the smallest missing positive integer. You must implement 
+ * an algorithm that runs in O(n) time and uses constant extra space.
+ * 
+ * Example 1:
+ * Input: nums = [1,2,0]
+ * Output: 3
+ * Explanation: The numbers in the range [1,2] are all in the array.
+ * Example 2:
+ * 
+ * Input: nums = [3,4,-1,1]
+ * Output: 2
+ * Explanation: 1 is in the array but 2 is missing.
+ * Example 3:
+ * 
+ * Input: nums = [7,8,9,11,12]
+ * Output: 1
+ * Explanation: The smallest positive integer 1 is missing.
  */
 public class p01_MissingNumbers {
     public static void main(String[] args) {
-        int[] nums1 = {9,6,4,2,3,5,7,0,1};
-        int[] nums2 = {4,3,2,7,8,2,3,1};
-
-        System.out.println(findMissingNumbers(nums1));
-        System.out.println(
-            findDisappearedNumbers(nums2).toString()
-        );
+        int[] nums1 = {3,4,-1,1};
+        int[] nums2 = {7,8,9,11,12};
+        System.out.println(nums1);
+        System.out.println(nums2);
     }
 
+    // question 01
     static int findMissingNumbers(int[] nums) {
         int pointer = 0;
         int index = 0;
@@ -57,6 +91,7 @@ public class p01_MissingNumbers {
         return index;
     } 
 
+    // question 02
     static List<Integer> findDisappearedNumbers(int[] nums) {
         int pointer = 0;
         List<Integer> result = new ArrayList<Integer>();
@@ -83,6 +118,7 @@ public class p01_MissingNumbers {
         return result;
     }
 
+    // question 03
     public int findDuplicate(int[] nums) {
         int pointer = 0;
         while (pointer <= nums.length-1) {
@@ -104,4 +140,52 @@ public class p01_MissingNumbers {
         return -1;
     }
     
+    // question 04
+    public List<Integer> findAllDuplicate(int[] nums) {
+        int pointer = 0;
+        List<Integer> result = new ArrayList<Integer>();
+
+        while (pointer <= nums.length-1) {
+            // if  num[num[pointer]-1] == nums[pointer], then ignore
+            // ex [3,1,3,4,2]: if we do not implement the above check then
+            // we will be stuck in an infinite loop
+            if (nums[pointer] == pointer+1 || nums[pointer] > nums.length || nums[nums[pointer]-1] == nums[pointer]) {
+                pointer++;
+            } else if (nums[pointer] != pointer+1 && nums[pointer] <= nums.length) {
+                int temp = nums[nums[pointer]-1];
+                nums[nums[pointer]-1] = nums[pointer];
+                nums[pointer] = temp;
+            }
+        }
+        for (int i=0; i<nums.length; i++) {
+            if (nums[i] != i+1) result.add(nums[i]);
+        }
+        return result;
+    }
+
+    // question 05
+    // approach: apply cyclic sort
+    // ignoring all negative numbers, the first positive
+    // number at the wrong index is the answer
+    public int firstMissingPositive(int[] nums) {
+        int pointer = 0;
+        while(pointer <= nums.length-1) {
+            // 3rd condition: ignores negative numbers
+            // 4th condition: igonores infinite looping caused due to duplicate elements
+            if (nums[pointer] == pointer+1 || nums[pointer] > nums.length
+             || nums[pointer] <= 0 || (nums[pointer]<nums.length && 
+             nums[pointer]>0 && nums[nums[pointer]-1] == nums[pointer])) {
+                pointer++;
+            } else {
+                int temp = nums[nums[pointer]-1];
+                nums[nums[pointer]-1] = nums[pointer];
+                nums[pointer] = temp;
+            }
+        }
+        for (int i = 0; i < nums.length; i++) if (nums[i] != i+1) return i+1;
+        // if code reaches this point, that means
+        // nums arrays is sorted from 1 to N
+        // hence the smallest missing number in N+1
+        return nums[nums.length-1]+1;
+    }
 }
