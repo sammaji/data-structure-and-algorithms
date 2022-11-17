@@ -54,10 +54,13 @@ import java.util.List;
  */
 public class p01_MissingNumbers {
     public static void main(String[] args) {
-        int[] nums1 = {3,4,-1,1};
-        int[] nums2 = {7,8,9,11,12};
-        System.out.println(nums1);
-        System.out.println(nums2);
+        // int[] nums1 = {3,4,-1,1};
+        // int[] nums2 = {7,8,9,11,12};
+        // System.out.println(nums1);
+        // System.out.println(nums2);
+
+        int[] nums = {2,2};
+        System.out.println(firstMissingPositive(nums));
     }
 
     // question 01
@@ -119,7 +122,7 @@ public class p01_MissingNumbers {
     }
 
     // question 03
-    public int findDuplicate(int[] nums) {
+    static int findDuplicate(int[] nums) {
         int pointer = 0;
         while (pointer <= nums.length-1) {
             // if  num[num[pointer]-1] == nums[pointer], then ignore
@@ -141,7 +144,7 @@ public class p01_MissingNumbers {
     }
     
     // question 04
-    public List<Integer> findAllDuplicate(int[] nums) {
+    static List<Integer> findAllDuplicate(int[] nums) {
         int pointer = 0;
         List<Integer> result = new ArrayList<Integer>();
 
@@ -167,14 +170,14 @@ public class p01_MissingNumbers {
     // approach: apply cyclic sort
     // ignoring all negative numbers, the first positive
     // number at the wrong index is the answer
-    public int firstMissingPositive(int[] nums) {
+    static int firstMissingPositive(int[] nums) {
         int pointer = 0;
         while(pointer <= nums.length-1) {
             // 3rd condition: ignores negative numbers
             // 4th condition: igonores infinite looping caused due to duplicate elements
             if (nums[pointer] == pointer+1 || nums[pointer] > nums.length
-             || nums[pointer] <= 0 || (nums[pointer]<nums.length && 
-             nums[pointer]>0 && nums[nums[pointer]-1] == nums[pointer])) {
+             || nums[pointer] <= 0 || ((nums[pointer]<nums.length || 
+             nums[pointer]>0) && nums[nums[pointer]-1] == nums[pointer])) {
                 pointer++;
             } else {
                 int temp = nums[nums[pointer]-1];
