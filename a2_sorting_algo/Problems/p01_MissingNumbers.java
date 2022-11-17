@@ -21,12 +21,10 @@ public class p01_MissingNumbers {
         int[] nums1 = {9,6,4,2,3,5,7,0,1};
         int[] nums2 = {4,3,2,7,8,2,3,1};
 
-        // System.out.println(findMissingNumbers(nums1));
+        System.out.println(findMissingNumbers(nums1));
         System.out.println(
-            findDisappearedNumbers(nums2)
-            );
-
-        System.out.println(Arrays.toString(nums2));
+            findDisappearedNumbers(nums2).toString()
+        );
     }
 
     static int findMissingNumbers(int[] nums) {
@@ -57,33 +55,53 @@ public class p01_MissingNumbers {
         } 
 
         return index;
-    }
-    
+    } 
 
-    // not working
     static List<Integer> findDisappearedNumbers(int[] nums) {
+        int pointer = 0;
         List<Integer> result = new ArrayList<Integer>();
 
-        int pointer = 0;
-
         while (pointer <= nums.length-1) {
-            if (nums[pointer] == pointer+1) pointer++;
+            // second condition is important if loop has duplicate items
+            // otherwise the loop runs infinitely
+            if (nums[pointer] == pointer+1 || nums[pointer] == nums[nums[pointer]-1]) pointer++;
             else {
                 if (nums[pointer] <= nums.length) {
                     int temp = nums[nums[pointer]-1];
-                    nums[pointer] = nums[nums[pointer]-1];
-                    nums[nums[pointer]-1] = temp;
+                    nums[nums[pointer]-1] = nums[pointer];
+                    nums[pointer] = temp;
                 } else {
                     pointer++;
                 }
             }
         }
-
         for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != i) result.add(i);
+            if (nums[i] != i+1) {
+                result.add(i+1);
+            }
+        }
+        return result;
+    }
+
+    public int findDuplicate(int[] nums) {
+        int pointer = 0;
+        while (pointer <= nums.length-1) {
+            // if  num[num[pointer]-1] == nums[pointer], then ignore
+            // ex [3,1,3,4,2]: if we do not implement the above check then
+            // we will be stuck in an infinite loop
+            if (nums[pointer] == pointer+1 || nums[pointer] > nums.length || nums[nums[pointer]-1] == nums[pointer]) {
+                pointer++;
+            } else if (nums[pointer] != pointer+1 && nums[pointer] <= nums.length) {
+                int temp = nums[nums[pointer]-1];
+                nums[nums[pointer]-1] = nums[pointer];
+                nums[pointer] = temp;
+            }
         }
 
-        return result;
+        for (int i=0; i<nums.length; i++) {
+            if (nums[i] != i+1) return nums[i];
+        }
+        return -1;
     }
     
 }
