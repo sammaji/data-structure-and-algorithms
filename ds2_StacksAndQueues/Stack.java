@@ -1,4 +1,4 @@
-package StacksAndQueues;
+package ds2_StacksAndQueues;
 
 /**
  * Value: Collection of objects
