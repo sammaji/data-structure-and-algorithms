@@ -5,7 +5,7 @@
  * - If they are not connected, then connects them.
  */
 
-package UnionFind;
+package ds1_UnionFind;
 
 public class DynamicConnectivityClient {
 

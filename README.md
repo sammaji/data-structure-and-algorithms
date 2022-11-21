@@ -3,7 +3,6 @@
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/samyabrata-maji/JAVA-DSA-CODE?style=social)
 
-
 ## Introduction
 
 Hi I am Samyabrata Maji.

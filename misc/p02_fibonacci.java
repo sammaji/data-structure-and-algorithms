@@ -8,7 +8,7 @@ import edu.princeton.cs.algs4.Stopwatch;
  * @question 03 : Write a program that prints the nth fibonacci number using bottom up approach
  */
 
-public class Fibonacci {
+public class p02_fibonacci {
     public static void main(String[] args) {
         int index = 1000;
         double time;
