@@ -1,4 +1,3 @@
-package misc;
 
 /**
  * @question 1: Find factorial
