@@ -1,4 +1,4 @@
-package a1_search_algo.Problems;
+package algorithms.search_algo.Problems;
 
 /**
  * https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/

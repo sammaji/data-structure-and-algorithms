@@ -1,4 +1,4 @@
-package a2_sorting_algo;
+package algorithms.sorting_algo;
 
 public class SelectionSort {
     public static void main(String[] args) {

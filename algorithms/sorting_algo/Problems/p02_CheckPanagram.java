@@ -1,4 +1,4 @@
-package a2_sorting_algo.Problems;
+package algorithms.sorting_algo.Problems;
 
 public class p02_CheckPanagram {
     public static void main(String[] args) {
