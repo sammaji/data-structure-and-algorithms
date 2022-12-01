@@ -1,4 +1,4 @@
-package ds1_UnionFind;
+package UnionFind;
 
 /**
  * Given a set of N objects:

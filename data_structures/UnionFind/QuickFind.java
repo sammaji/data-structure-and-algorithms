@@ -1,4 +1,4 @@
-package ds1_UnionFind;
+package UnionFind;
 
 public class QuickFind extends UF {
 
