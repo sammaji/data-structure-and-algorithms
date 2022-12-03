@@ -9,9 +9,9 @@
 4. ~~[Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/)~~
 5. ~~[Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/)~~
 6. ~~[Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)~~
-7. [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)
+7. ~~[Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/)~~
 8. ~~[How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)~~ ⭐
-9. [Create Target Array in the Given Order](https://leetcode.com/problems/create-target-array-in-the-given-order/)
+9. ~~[Create Target Array in the Given Order](https://leetcode.com/problems/create-target-array-in-the-given-order/)~~
 10. ~~[Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/)~~
 11. [Count Items Matching a Rule](https://leetcode.com/problems/count-items-matching-a-rule/)
 12. [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)
