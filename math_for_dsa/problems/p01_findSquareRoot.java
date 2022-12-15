@@ -2,15 +2,10 @@ package math_for_dsa.problems;
 
 public class p01_findSquareRoot {
     public static void main(String[] args) {
-        int no = 27;
-        System.out.printf("sqrt = %s", Math.sqrt(no));
-        System.out.println();
-        double sq = findExactSquareRoot(no, 3);
-
-        if (sq == -1)
-        System.out.printf("sqrt of %s does not exists", no);
-        else
-        System.out.println(sq);
+        int number = 27;
+        double square_root = findSquareRootNewtonRapson(number, 10);
+        System.out.println(Math.sqrt(number));
+        System.out.println(square_root);
     }
 
     // binary search algo to find integer part of sqrt of a number
@@ -44,7 +39,7 @@ public class p01_findSquareRoot {
             throw new IllegalArgumentException("Square Root of a negative number is not possible");
 
         while (start <= end) {
-            mid = start + (int)((end - start) / 2);
+            mid = start + (int) ((end - start) / 2);
             if (mid * mid > number) {
                 end = mid - 1;
             } else if (mid * mid < number) {
@@ -54,13 +49,26 @@ public class p01_findSquareRoot {
             }
         }
 
-        for (int i=1; i <= decimal_places; i++) {
+        for (int i = 1; i <= decimal_places; i++) {
             System.out.println("ans" + mid);
-            while (mid*mid < number) {
-                System.out.println(1/Math.pow(10, i));
-                mid += 1/Math.pow(10, i);
+            while (mid * mid < number) {
+                System.out.println(1 / Math.pow(10, i));
+                mid += 1 / Math.pow(10, i);
             }
         }
         return Math.floor(mid * 100) / 100;
+    }
+
+    public static double findSquareRootNewtonRapson(int number) {
+        return findSquareRootNewtonRapson(number, 5);
+    }
+
+    public static double findSquareRootNewtonRapson(int number, int steps) {
+        if (number < 0)
+            throw new IllegalArgumentException("Square Root of a negative number is not possible");
+        double guess = (number > 1) ? number / 2 : 1;
+        for (int i = 0; i < steps; i++)
+            guess = 0.5 * (guess + (number / guess));
+        return guess;
     }
 }
