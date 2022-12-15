@@ -59,11 +59,12 @@ public class p01_findSquareRoot {
         return Math.floor(mid * 100) / 100;
     }
 
+    // for variable iterations
     public static double findSquareRootNewtonRapson(int number) {
         if (number < 0)
             throw new IllegalArgumentException("Square Root of a negative number is not possible");
         double guess = (number > 1) ? number / 2 : 1;
-        
+
         double error;
         do {
             error = Math.abs((guess - (number / guess))*0.5);
@@ -74,6 +75,7 @@ public class p01_findSquareRoot {
         return guess;
     }
 
+    // for fixed iterations
     public static double findSquareRootNewtonRapson(int number, int steps) {
         if (number < 0)
             throw new IllegalArgumentException("Square Root of a negative number is not possible");
