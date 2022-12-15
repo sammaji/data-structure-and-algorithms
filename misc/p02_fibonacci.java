@@ -1,6 +1,4 @@
 
-import edu.princeton.cs.algs4.Stopwatch;
-
 /**
  * @question 01 : Write a program that prints the nth fibonacci number
  * @question 02 : Write a program that prints the nth fibonacci number using
