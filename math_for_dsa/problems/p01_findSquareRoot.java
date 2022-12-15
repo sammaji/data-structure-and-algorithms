@@ -3,7 +3,7 @@ package math_for_dsa.problems;
 public class p01_findSquareRoot {
     public static void main(String[] args) {
         int number = 27;
-        double square_root = findSquareRootNewtonRapson(number, 10);
+        double square_root = findSquareRootNewtonRapson(number);
         System.out.println(Math.sqrt(number));
         System.out.println(square_root);
     }
@@ -60,7 +60,18 @@ public class p01_findSquareRoot {
     }
 
     public static double findSquareRootNewtonRapson(int number) {
-        return findSquareRootNewtonRapson(number, 5);
+        if (number < 0)
+            throw new IllegalArgumentException("Square Root of a negative number is not possible");
+        double guess = (number > 1) ? number / 2 : 1;
+        
+        double error;
+        do {
+            error = Math.abs((guess - (number / guess))*0.5);
+            System.out.println(guess);
+            guess = 0.5 * (guess + (number / guess));
+        } while (error > 0);
+
+        return guess;
     }
 
     public static double findSquareRootNewtonRapson(int number, int steps) {
