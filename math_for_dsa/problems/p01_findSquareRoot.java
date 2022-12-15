@@ -2,7 +2,7 @@ package math_for_dsa.problems;
 
 public class p01_findSquareRoot {
     public static void main(String[] args) {
-        int number = 27;
+        int number = 1699;
         double square_root = findSquareRootNewtonRapson(number);
         System.out.println(Math.sqrt(number));
         System.out.println(square_root);
@@ -69,8 +69,7 @@ public class p01_findSquareRoot {
         do {
             error = Math.abs((guess - (number / guess))*0.5);
             guess = 0.5 * (guess + (number / guess));
-        } while (error > 0);
-
+        } while (error > 0.01); // 0.01 is the weight; more the weight, more accurate result
         return guess;
     }
 
