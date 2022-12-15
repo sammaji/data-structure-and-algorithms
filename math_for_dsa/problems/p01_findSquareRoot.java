@@ -68,7 +68,6 @@ public class p01_findSquareRoot {
         double error;
         do {
             error = Math.abs((guess - (number / guess))*0.5);
-            System.out.println(guess);
             guess = 0.5 * (guess + (number / guess));
         } while (error > 0);
 
