@@ -3,7 +3,7 @@
  * @question 1: Find factorial
  * @question 2: Reverse a string in Linear Time
  */
-public class p01_reverseString {
+public class reverseString {
     public static void main(String[] args) {
         System.out.println(isArmstrongNumber(153));
     }

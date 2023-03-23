@@ -22,7 +22,7 @@
  * Input: nums = [3,6]
  * Output: false
  */
-public class p03_goodArray {
+public class goodArray {
     public static void main(String[] args) {
 
     }

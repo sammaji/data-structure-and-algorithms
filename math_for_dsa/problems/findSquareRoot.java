@@ -1,6 +1,6 @@
 package math_for_dsa.problems;
 
-public class p01_findSquareRoot {
+public class findSquareRoot {
     public static void main(String[] args) {
         int no = 27;
         System.out.printf("sqrt = %s", Math.sqrt(no));

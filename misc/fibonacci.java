@@ -7,7 +7,7 @@
  *           bottom up approach
  */
 
-public class p02_fibonacci {
+public class fibonacci {
     /**
      * @sol: @problem 01
      *       DATE: 07-11-22
