@@ -1,4 +1,4 @@
-package algorithms.sorting_algo;
+package algorithms.sorting;
 
 public class BubbleSort {
     Package a3_sorting_algo;

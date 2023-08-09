@@ -1,4 +1,4 @@
-package algorithms.search_algo;
+package algorithms.search;
 
 /**
  * Using binary search algorithm to search for a target

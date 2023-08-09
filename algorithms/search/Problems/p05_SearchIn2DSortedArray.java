@@ -1,4 +1,4 @@
-package algorithms.search_algo.Problems;
+package algorithms.search.Problems;
 
 /**
  * Search for an element in a 2D row-wise

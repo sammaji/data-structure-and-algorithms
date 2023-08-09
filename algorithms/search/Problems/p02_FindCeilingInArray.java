@@ -1,4 +1,4 @@
-package algorithms.search_algo.Problems;
+package algorithms.search.Problems;
 
 /**
  * @Date : 08/11/2022

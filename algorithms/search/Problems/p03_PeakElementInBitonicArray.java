@@ -1,4 +1,4 @@
-package algorithms.search_algo.Problems;
+package algorithms.search.Problems;
 
 public class p03_PeakElementInBitonicArray {
     static int PeakElement(int[] sample) {
