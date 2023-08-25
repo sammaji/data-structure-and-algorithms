@@ -8,9 +8,9 @@
 
 - [Sum Triangle from Array](https://www.geeksforgeeks.org/sum-triangle-from-array/) `GFG`
 - [Maximum and Minimum value in an array](https://www.geeksforgeeks.org/recursive-programs-to-find-minimum-and-maximum-elements-of-array/) `GFG`
-- ~~[Binary Search using recursion](https://leetcode.com/problems/binary-search/) `leetcode`~~
+- ~~[Binary Search using recursion](https://leetcode.com/problems/binary-search/)~~ `leetcode`
 - [First Uppercase Letter in a String](https://www.geeksforgeeks.org/first-uppercase-letter-in-a-string-iterative-and-recursive/) `GFG`
-- ~~[Reverse String](https://leetcode.com/problems/reverse-string/) `leetcode`~~
+- ~~[Reverse String](https://leetcode.com/problems/reverse-string/)~~ `leetcode`
 - [Print 1 To N Without Loop](https://practice.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115620/1/) `GFG`
 - [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) `leetcode`
 - [Special Fibonacci](https://www.codechef.com/problems/FIBXOR01/) `CodeChef`
@@ -46,11 +46,11 @@
 - [Combination Sum](https://leetcode.com/problems/combination-sum/) `leetcode`
 - [Word Search](https://leetcode.com/problems/word-search/) `leetcode`
 - [Target sum](https://leetcode.com/problems/target-sum/) `leetcode`
-- [Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/) `leetcode`
+- ~~[Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/) `leetcode`~~
 - [K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar/) `leetcode`
 - [Count Good Numbers](https://leetcode.com/problems/count-good-numbers/) `leetcode`
 - [N Digit numbers with digits in increasing order](https://practice.geeksforgeeks.org/problems/n-digit-numbers-with-digits-in-increasing-order5903/1/) `GFG`
-- [Pow(x, n)](https://leetcode.com/problems/powx-n/) `leetcode`
+- ~~[Pow(x, n)](https://leetcode.com/problems/powx-n/) `leetcode`~~
 - [Minimum Non-Zero Product of the Array Elements](https://leetcode.com/problems/minimum-non-zero-product-of-the-array-elements/) `leetcode`
 - [Handshakes](https://practice.geeksforgeeks.org/problems/handshakes1303/1/) `GFG`
 - [HackerRank](https://www.hackerrank.com/domains/algorithms?filters%5Bsubdomains%5D%5B%5D=recursion&filters%5Bdifficulty%5D%5B%5D=medium)
