@@ -18,13 +18,13 @@
 
 - [Design Twitter](https://leetcode.com/problems/design-twitter/) `leetcode`
 - [Design Linked List](https://leetcode.com/problems/design-linked-list/) `leetcode`
-- [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) `leetcode`
-- [Reorder List](https://leetcode.com/problems/reorder-list/) `leetcode`
-- [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) `leetcode` `HSBC`
-- [Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/) `leetcode`
+- ~~[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)~~ `leetcode`
+- ~~[Reorder List](https://leetcode.com/problems/reorder-list/)~~ `leetcode`
+- ~~[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)~~ `leetcode` `HSBC`
+- ~~[Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/)~~ `leetcode`
 - ~~[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)~~ `leetcode` `TCS` `Amazon` `Microsoft` `Facebook` `Qualcomm`
 - [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/) `leetcode`
-- [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) `leetcode`
+- ~~[Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)~~ `leetcode`
 - [Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/) `leetcode` `Amazon`
 - [Rotate List](https://leetcode.com/problems/rotate-list/) `leetcode` `Microsoft`
 - [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) `leetcode`
