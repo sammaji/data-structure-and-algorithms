@@ -1,5 +1,7 @@
 package algorithms.sorting;
 
+import java.util.Arrays;
+
 public class InsersionSort {
     public static void main(String[] args) {
         int[] arrWithoutRepeatition = {
@@ -12,11 +14,8 @@ public class InsersionSort {
             17,15,2,17
         };
 
-        int[] result = insersionSort(arrWithoutRepeatition);
-        for (int element : result) System.out.print(element+",");
-        System.out.println();
-        result = insersionSort(arrWithRepeatition);
-        for (int element : result) System.out.print(element+",");
+        System.out.println(Arrays.toString(insersionSort(arrWithoutRepeatition)));
+        System.out.println(Arrays.toString(insersionSort(arrWithRepeatition)));
     }
 
     static int[] insersionSort(int[] sample) {
